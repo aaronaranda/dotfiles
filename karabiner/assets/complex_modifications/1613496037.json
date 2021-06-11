@@ -1,0 +1,1 @@
+{"title":"","rules":[{"description":"Fn + N,H End/Home","manipulators":[{"type":"basic","from":{"modifiers":{"mandatory":["fn"],"optional":["n"]},"simultaneous":[{"key_code":"right_arrow","consumer_key_code":"","pointing_button":""}],"key_code":"fn"},"conditions":[{"type":"frontmost_application_if"}]}]}]}
