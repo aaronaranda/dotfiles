@@ -85,3 +85,6 @@ nmap <Leader><Leader>j <Plug>(easymotion-overwin-line)
 nmap <Leader><Leader>k <Plug>(easymotion-overwin-line)
 map  <Leader><Leader>w <Plug>(easymotion-bd-w)
 map <Leader><Leader>w <Plug>(easymotion-overwin-w)
+
+inoremap <buffer> <C-s> <esc>yiwi<lt><esc>ea></><esc>hpF>i
+

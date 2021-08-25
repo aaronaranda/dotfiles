@@ -57,7 +57,10 @@ Plug 'pangloss/vim-javascript'
 
 " Language Packs
 let g:polyglot_disabled = ['latex']
+let g:polyglot_disabled = ['markdown']
 Plug 'sheerun/vim-polyglot'
+
+Plug 'vim-pandoc/vim-pandoc-syntax'
 
 " Add DevIcons
 Plug 'ryanoasis/vim-devicons'
@@ -77,7 +80,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'lervag/vimtex'
 
 " Markdown Preview
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug'] }
 
 " vim-hexcolor
 Plug 'etdev/vim-hexcolor'
@@ -94,6 +97,22 @@ Plug 'easymotion/vim-easymotion'
 " JS
 Plug 'leafgarland/typescript-vim' 
 Plug 'maxmellon/vim-jsx-pretty'
+
+" Auto closing tags
+Plug 'alvan/vim-closetag' 
+
+" Box Drawing
+Plug 'gyim/vim-boxdraw'
+
+" PlantUML Preview
+Plug 'weirongxu/plantuml-previewer.vim'
+
+" PlantUML Syntax
+Plug 'aklt/plantuml-syntax'
+
+" Browser 
+Plug 'tyru/open-browser.vim'
+
 
 call plug#end()
 

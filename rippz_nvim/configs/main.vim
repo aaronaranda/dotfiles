@@ -34,8 +34,10 @@ set incsearch
 set keymodel=startsel,stopsel
 set nowrap
 set splitright
-filetype plugin indent on
+"filetype plugin indent on
 set clipboard=unnamedplus
+set virtualedit+=all
+
 
 " SROLLING
 if !&scrolloff
@@ -48,11 +50,11 @@ endif
 
 " RELATIVE NUMBERS
 set number
-augroup numbertoggle
-  autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-  autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
-augroup END
+"augroup numbertoggle
+"  autocmd!
+"  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+"  autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
+"augroup END
 
 
 " FILE REOPEN
@@ -86,8 +88,7 @@ set expandtab
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-set smarttab
-set smartindent
+"set smarttab
 set shiftround
 
 " INDENT 
@@ -104,4 +105,7 @@ vnoremap <Leader>Al :left<CR>
 vnoremap <Leader>Ac :center<CR>
 vnoremap <Leader>Ar :right<CR>
 
-
+" COMMENT THING
+set formatoptions-=cro
+set comments=
+set concealcursor=n
