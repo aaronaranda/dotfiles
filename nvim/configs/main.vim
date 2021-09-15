@@ -10,7 +10,7 @@ let maplocalleader = " "
 colorscheme wal
 let g:darkspace_colorterm=0
 let g:darkspace_italics=1
-set guifont=Source\ Code\ Pro\ for\ Powerline
+set guifont=Hasklig
 "set termguicolors
 highlight Normal guibg=none
 highlight NonText guibg=none

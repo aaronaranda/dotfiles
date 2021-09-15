@@ -105,7 +105,7 @@ set completefunc=emoji#complete
 
 " INDENT GUIDES
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
-let g:indent_guides_auto_colors = 1
+let g:indentLine_setColors = 0
 let g:indentLine_fileTypeExclude = [
       \'defx',
       \'markdown',
@@ -116,7 +116,17 @@ let g:indentLine_fileTypeExclude = [
       \'vista'
       \]
 let g:indentLine_concealcursor='n'
-
+let g:indentLine_fileType = [
+      \ 'cpp',
+      \ 'py',
+      \ 'html',
+      \ 'css',
+      \ 'tex',
+      \ 'ts',
+      \ 'js',
+      \ 'java'
+      \  ]
+let g:indentLine_enabled = 1
 
 " COC
 hi CocWarningSign ctermfg=blue
@@ -165,6 +175,7 @@ let g:coc_global_extensions = [
       \'coc-pairs',
       \'coc-json',
       \'coc-python',
+      \'coc-jedi',
       \'coc-imselect',
       \'coc-highlight',
       \'coc-git',
@@ -317,13 +328,13 @@ let g:fzf_layout = { 'window': 'call CreateCenteredFloatingWindow()' }
 
 " MARKDOWN PREVIEW
 " Contains CSS for markdown + page + higlight
-let g:mkdp_markdown_css = '/home/aaron/.config/nvim/static/markdown-preview/customStyle.css' 
+"let g:mkdp_markdown_css = '/home/aaron/.config/nvim/static/markdown-preview/customStyle.css' 
 " Trick plugin into hosting colors.css so we get nice themes
 let g:mkdp_highlight_css = '/home/aaron/.cache/wal/colors.css'
 let g:mkdp_port = '3456'
 let g:mkdp_preview_options = {
     \ 'mkit': {},
-    \ 'katex': {},
+    \ 'latex': {},
     \ 'uml': {'server': 'http://localhost:4928'},
     \ 'maid': {},
     \ 'disable_sync_scroll': 0,
@@ -340,7 +351,6 @@ let g:mkdp_preview_options = {
 " minimap "
 """""""""""
 let g:minimap_width = 20
-let g:minimap_auto_start=1
 
 """"""""""""""""""
 " Vim table mode "
@@ -412,5 +422,8 @@ let g:polyglot_disabled=['autoindent', 'comments', 'markdown', 'markdown.plugin'
 augroup pandoc_syntax
     au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
 augroup END
+
+" TREE-SITTER
+lua require'nvim-treesitter.configs'.setup {highlight = { enable = true }}
 
 

@@ -14,8 +14,6 @@ Plug 'jiangmiao/auto-pairs'
 " Multiple Cursors
 Plug 'terryma/vim-multiple-cursors'
 
-" Tabnine
-Plug 'codota/tabnine-vim'
 
 " Status Bar
 Plug 'vim-airline/vim-airline' 
@@ -38,7 +36,7 @@ Plug 'tpope/vim-surround'
 " Wal colorscheme
 Plug 'dylanaraps/wal.vim'
 
-" Indent Guides
+" Indent Lines
 Plug 'yggdroot/indentLine'
 
 " Git wrapper
@@ -113,7 +111,11 @@ Plug 'aklt/plantuml-syntax'
 " Browser 
 Plug 'tyru/open-browser.vim'
 
+" Preview for HTML/CSS
+Plug 'shime/vim-livedown'
 
+" Tree-Sitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 call plug#end()
 
 
