@@ -40,46 +40,33 @@ cursor:
     blinking: Always
 
 font:
-  size: 10.0
+  size: 9.5
   ligatures: true
-  normal: 
-    family: Source Code Pro
+  normal:
+    family: Hasklig
     style: Regular
   bold:
-    family: Source Code Pro
+    family: Hasklig
     style: Bold
   italic:
-    family: Source Code Pro
+    family: Hasklig
     style: Italic
-      
+
 window:
   padding:
     x: 6
     y: 6
-  # scrolling:
-  #   # Maximum number of lines in the scrollback buffer.
-  #   # Specifying '0' will disable scrolling.
+
   history: 10000
-  #   # Number of lines the viewport will move for every line scrolled when
-  #   # scrollback is enabled (history > 0).
-  #   multiplier: 10
 
-# Allow terminal applications to change Alacritty's window title.
   dynamic_title: true
-
-  # # If `true`, bold text is drawn using the bright color variants.
-  # draw_bold_text_with_bright_colors: true
 
   # selection:
   semantic_escape_chars: ',│`|:"'' ()[]{}<>'
   save_to_clipboard: true
   live_config_reload: true
 key_bindings:
-  - { key: V, mods: Control, action: Paste }
-  - { key: C, mods: Control, action: Copy }
   - { key: Key0, mods: Control, action: ResetFontSize }
   - { key: Equals, mods: Control, action: IncreaseFontSize }
   - { key: Minus, mods: Control, action: DecreaseFontSize }
-  # - { key: Add, mods: Control, action: IncreaseFontSize }
-  # - { key: Subtract, mods: Control, action: DecreaseFontSize }
-  # - { key: N, mods: Control, action: SpawnNewInstance }
+

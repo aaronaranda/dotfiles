@@ -8,8 +8,8 @@
 
 
 # DISPLAY
-# exec feh --bg-scale ~/Pictures/city_night_moon.jpg
-exec --no-startup-id wal -i ~/Pictures/city_night_moon.jpg 
+#exec --no-startup-id wal -i ~/Pictures/wallpapers/glitch-ai.jpg
+exec --no-startup-id wal -i ~/Pictures/wallpapers/mountains_trees_pink.jpg -n -q -b 000000 --saturate 1.0
 
 ############
 #   KEYS   #
@@ -178,10 +178,10 @@ exec nitrogen --restore
 exec picom -f
 
 # Gaps
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 2
 new_window pixel 4
-gaps inner 17
-gaps outer 5
+gaps inner 10
+gaps outer 0
 
 # Screen blanking
 exec xset s off
@@ -195,7 +195,6 @@ exec_always --no-startup-id ~/.config/polybar/scripts/launch.sh &
 # open chrome
 bindsym $mod+g exec --no-startup-id google-chrome-stable
 
- 
 
 
 
